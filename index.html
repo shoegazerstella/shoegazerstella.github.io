@@ -66,6 +66,8 @@ hr {
       <li><a href="https://github.com/shoegazerstella" target="_blank" class="social-icon"> <i class="fa fa-github"></i></a></li>
       <li><a href="https://twitter.com/shoegazerstella" target="_blank" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
       <li><a href="mailto:mstella.tavella@gmail.com" target="_blank" class="social-icon"> <i class="fa fa-envelope"></i></a></li>
+      <li><a href="https://www.mixcloud.com/VBRA/" target="_blank" class="social-icon"> <i class="fa fa-mixcloud"></i></a></li>
+      <li><a href="https://soundcloud.com/vbravbra" target="_blank" class="social-icon"> <i class="fa fa-soundcloud"></i></a></li>
   </ul>
 </div>
 </div>

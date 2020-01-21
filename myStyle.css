@@ -112,3 +112,27 @@ ul.social-icons {
 .fa-github:hover {
     background-color: #1CFF01;
 }
+.fa-mixcloud {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #fff;
+}
+.fa-mixcloud:hover {
+    background-color: #1CFF01;
+}
+.fa-soundcloud {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #fff;
+}
+.fa-soundcloud:hover {
+    background-color: #1CFF01;
+}
