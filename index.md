@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 
+<link rel="icon" href="images/pic.png">
 <link rel="stylesheet" type="text/css" href="myStyle.css" />
-
 <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
