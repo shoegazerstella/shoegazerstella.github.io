@@ -34,7 +34,7 @@ hr {
 
   <div style="text-align: center;">
     <div style="width: 500px; margin: 0 auto; color: #000">
-      <h1><b>Maria Stella Tavella</b></h1>
+      <h1><b>M. Stella T.</b></h1>
     </div>
   </div>
 
