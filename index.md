@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M. Stella Tavella - System Active</title>
+    <link rel="icon" href="images/pic2.PNG">
+    <link rel="stylesheet" type="text/css" href="myStyle.css" />
+    <link href='https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- Desktop Icons -->
+    <div class="desktop-icons">
+        <div class="desktop-icon" onclick="showView('home')">
+            <i class="fa fa-folder"></i>
+            <span>About</span>
+        </div>
+        <div class="desktop-icon" onclick="showView('research')">
+            <i class="fa fa-folder"></i>
+            <span>Research</span>
+        </div>
+        <div class="desktop-icon" onclick="showView('projects')">
+            <i class="fa fa-folder"></i>
+            <span>Projects</span>
+        </div>
+        <div class="desktop-icon" onclick="showView('music')">
+            <i class="fa fa-folder"></i>
+            <span>Music</span>
+        </div>
+        <div class="desktop-icon" onclick="window.location.href='mailto:mstella.tavella@gmail.com'">
+            <i class="fa fa-file-text-o"></i>
+            <span>Contact</span>
+        </div>
+    </div>
+
+
+    <!-- Terminal Window -->
+    <div class="terminal-window">
+        <!-- macOS Title Bar -->
+        <div class="terminal-header">
+            <div class="terminal-dots">
+                <span class="terminal-dot red"></span>
+                <span class="terminal-dot yellow"></span>
+                <span class="terminal-dot green"></span>
+            </div>
+            <span class="terminal-title">mstellatavella@about</span>
+        </div>
+
+        <!-- Terminal Content -->
+        <div class="terminal-content">
+            <!-- Hidden Navigation for smooth scrolling -->
+            <nav class="navbar">
+                <div class="nav-content">
+                    <a href="#home" class="nav-link">[home]</a>
+                    <a href="#research" class="nav-link">[research]</a>
+                    <a href="#contact" class="nav-link">[contact]</a>
+                </div>
+            </nav>
+
+            <!-- Hero Section -->
+            <section id="home" class="hero terminal-view" data-view="home">
+                <div class="container">
+            <div class="agent-card">
+                <img src="images/pic2.PNG" alt="M. Stella Tavella" class="profile-img">
+                <div class="agent-info">
+                    <h1 class="name">M. Stella Tavella</h1>
+                    <div class="status-line">
+                        <span class="status-dot"></span>
+                        <span class="status-text">ONLINE</span>
+                        <span class="separator">|</span>
+                        <span class="role">AI · Music Information Retrieval · ML · Audio</span>
+                    </div>
+
+                    <!-- Social Icons -->
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/mstellatavella/" target="_blank" class="social-icon" aria-label="LinkedIn" data-label="linkedin">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                        <a href="https://scholar.google.com/citations?user=WNISm7kAAAAJ" target="_blank" class="social-icon" aria-label="Google Scholar" data-label="scholar">
+                            <i class="fa fa-graduation-cap"></i>
+                        </a>
+                        <a href="https://github.com/shoegazerstella" target="_blank" class="social-icon" aria-label="GitHub" data-label="github">
+                            <i class="fa fa-github"></i>
+                        </a>
+                        <a href="https://twitter.com/shoegazerstella" target="_blank" class="social-icon" aria-label="Twitter" data-label="twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="mailto:mstella.tavella@gmail.com" class="social-icon" aria-label="Email" data-label="email">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                        <a href="https://www.mixcloud.com/VBRA/" target="_blank" class="social-icon" aria-label="Mixcloud" data-label="mixcloud">
+                            <i class="fa fa-mixcloud"></i>
+                        </a>
+                        <a href="https://soundcloud.com/vbravbra" target="_blank" class="social-icon" aria-label="SoundCloud" data-label="soundcloud">
+                            <i class="fa fa-soundcloud"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="terminal-log" id="terminal-log">
+                <!-- Content will be typed in by JavaScript -->
+            </div>
+                </div>
+            </section>
+
+            <!-- Research Section -->
+            <section id="research" class="research terminal-view" data-view="research" style="display:none;">
+                <div class="container">
+
+            <h2 class="section-title">Research Output</h2>
+
+            <div class="scholar-banner">
+                <a href="https://scholar.google.com/citations?user=WNISm7kAAAAJ" target="_blank" class="scholar-link">
+                    <i class="fa fa-graduation-cap"></i> View Google Scholar Profile
+                </a>
+            </div>
+
+            <div class="research-interests">
+                <div class="interest-header">Research Domains</div>
+                <p>Artificial Intelligence • Music Information Retrieval • Music Generation • Natural Language Processing • Audio Signal Processing</p>
+            </div>
+
+            <!-- Publications -->
+            <div class="publications">
+                <h3 class="subsection-title">Peer-Reviewed Papers</h3>
+
+                <div class="publications-grid">
+                <div class="publication" onclick="window.open('https://arxiv.org/abs/1901.04831', '_blank')">
+                    <div class="pub-header">
+                        <span class="pub-id">Paper 1</span>
+                        <span class="pub-status">Published</span>
+                    </div>
+                    <h4 class="pub-title">Exploiting Synchronized Lyrics and Vocal Features for Music Emotion Detection</h4>
+                    <p class="pub-authors">L. Parisi, S. Francia, S. Olivastri, <strong>M.S. Tavella</strong></p>
+                    <p class="pub-venue">arXiv preprint arXiv:1901.04831</p>
+                    <div class="pub-meta">
+                        <span class="pub-data"><span class="key">Year:</span> 2019</span>
+                        <span class="pub-data"><span class="key">Citations:</span> 21</span>
+                        <a href="https://arxiv.org/abs/1901.04831" target="_blank" class="pub-link">View Paper →</a>
+                    </div>
+                </div>
+
+                <div class="publication" onclick="window.open('https://program.ismir2020.net/poster_6-12.html', '_blank')">
+                    <div class="pub-header">
+                        <span class="pub-id">Paper 2</span>
+                        <span class="pub-status">Published</span>
+                    </div>
+                    <h4 class="pub-title">Butter Lyrics Over Hominy Grit: Comparing Audio and Psychology-Based Text Features in MIR Tasks</h4>
+                    <p class="pub-authors">J. Kim, A.M. Demetriou, S. Manolios, <strong>M.S. Tavella</strong>, C.C.S. Liem</p>
+                    <p class="pub-venue">ISMIR 2020, pp. 861-868</p>
+                    <div class="pub-meta">
+                        <span class="pub-data"><span class="key">Year:</span> 2020</span>
+                        <span class="pub-data"><span class="key">Citations:</span> 8</span>
+                        <a href="https://program.ismir2020.net/poster_6-12.html" target="_blank" class="pub-link">View Paper →</a>
+                    </div>
+                </div>
+
+                <div class="publication" onclick="window.open('https://ieeexplore.ieee.org/document/10285863', '_blank')">
+                    <div class="pub-header">
+                        <span class="pub-id">Paper 3</span>
+                        <span class="pub-status">Published</span>
+                    </div>
+                    <h4 class="pub-title">Exploiting Music Source Separation for Singing Voice Detection</h4>
+                    <p class="pub-authors">F. Bonzi, M. Mancusi, S. Del Deo, P. Melucci, <strong>M.S. Tavella</strong>, L. Parisi, E. Rodolá</p>
+                    <p class="pub-venue">IEEE 33rd International Workshop on Machine Learning for Signal Processing</p>
+                    <div class="pub-meta">
+                        <span class="pub-data"><span class="key">Year:</span> 2023</span>
+                        <span class="pub-data"><span class="key">Citations:</span> 3</span>
+                        <a href="https://ieeexplore.ieee.org/document/10285863" target="_blank" class="pub-link">View Paper →</a>
+                    </div>
+                </div>
+                </div>
+
+                <h3 class="subsection-title">Patents</h3>
+
+                <div class="publications-grid">
+                <div class="publication" onclick="window.open('https://patents.google.com/patent/US20230022966A1/en', '_blank')">
+                    <div class="pub-header">
+                        <span class="pub-id">Patent 1</span>
+                        <span class="pub-status">Granted</span>
+                    </div>
+                    <h4 class="pub-title">Method and System for Analyzing, Classifying, and Node-Ranking Content in Audio Tracks</h4>
+                    <p class="pub-authors">L. Parisi, M. Paglia, A. Albano, P. Magnani, P. Melucci, <strong>M.S. Tavella</strong></p>
+                    <p class="pub-venue">US Patent App. 17/869,053</p>
+                    <div class="pub-meta">
+                        <span class="pub-data"><span class="key">Year:</span> 2023</span>
+                        <span class="pub-data"><span class="key">Citations:</span> 3</span>
+                        <a href="https://patents.google.com/patent/US20230022966A1/en" target="_blank" class="pub-link">View Patent →</a>
+                    </div>
+                </div>
+
+                <div class="publication" onclick="window.open('https://patents.google.com/patent/US20230409870A1/en', '_blank')">
+                    <div class="pub-header">
+                        <span class="pub-id">Patent 2</span>
+                        <span class="pub-status">Granted</span>
+                    </div>
+                    <h4 class="pub-title">Systems and Methods for Artificial Intelligence Assistant Publishing</h4>
+                    <p class="pub-authors"><strong>M.S. Tavella</strong>, L. Parisi, M. Bracci, G. Costantino, F. Delfino, P. Melucci</p>
+                    <p class="pub-venue">US Patent App. 18/337,905</p>
+                    <div class="pub-meta">
+                        <span class="pub-data"><span class="key">Year:</span> 2023</span>
+                        <span class="pub-data"><span class="key">Citations:</span> 2</span>
+                        <a href="https://patents.google.com/patent/US20230409870A1/en" target="_blank" class="pub-link">View Patent →</a>
+                    </div>
+                </div>
+                </div>
+
+                </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="research terminal-view" data-view="projects" style="display:none;">
+                <div class="container">
+                    <h2 class="section-title">Open Source Projects</h2>
+
+                    <div class="social-icons" style="margin-bottom: 1.5rem;">
+                        <a href="https://github.com/shoegazerstella" target="_blank" class="social-icon" aria-label="GitHub">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </div>
+
+                    <div class="publications">
+                        <div class="publications-grid">
+                        <div class="publication" onclick="window.open('https://github.com/shoegazerstella/broski', '_blank')">
+                            <div class="pub-header">
+                                <span class="pub-id">Project 1</span>
+                                <span class="pub-status">Active</span>
+                            </div>
+                            <h4 class="pub-title">broski</h4>
+                            <p class="pub-authors">Visual browser automation for humans. Create web scraping, testing, and monitoring workflows with a drag-and-drop UI — then watch Chromium do the work live.</p>
+                            <div class="pub-meta">
+                                <a href="https://github.com/shoegazerstella/broski" target="_blank" class="pub-link">View Repository →</a>
+                            </div>
+                        </div>
+
+                        <div class="publication" onclick="window.open('https://github.com/shoegazerstella/Modulr', '_blank')">
+                            <div class="pub-header">
+                                <span class="pub-id">Project 2</span>
+                                <span class="pub-status">Active</span>
+                            </div>
+                            <h4 class="pub-title">Modulr</h4>
+                            <p class="pub-authors">Modular music generation and synthesis framework</p>
+                            <div class="pub-meta">
+                                <a href="https://github.com/shoegazerstella/Modulr" target="_blank" class="pub-link">View Repository →</a>
+                            </div>
+                        </div>
+
+                        <div class="publication" onclick="window.open('https://github.com/shoegazerstella/musicnnCondVAE', '_blank')">
+                            <div class="pub-header">
+                                <span class="pub-id">Project 3</span>
+                                <span class="pub-status">Active</span>
+                            </div>
+                            <h4 class="pub-title">musicnnCondVAE</h4>
+                            <p class="pub-authors">Conditional Variational Autoencoder for music generation using deep neural networks</p>
+                            <div class="pub-meta">
+                                <a href="https://github.com/shoegazerstella/musicnnCondVAE" target="_blank" class="pub-link">View Repository →</a>
+                            </div>
+                        </div>
+
+                        <div class="publication" onclick="window.open('https://github.com/shoegazerstella/midi2img2vae', '_blank')">
+                            <div class="pub-header">
+                                <span class="pub-id">Project 4</span>
+                                <span class="pub-status">Active</span>
+                            </div>
+                            <h4 class="pub-title">midi2img2vae</h4>
+                            <p class="pub-authors">MIDI to image conversion with VAE-based music generation and reconstruction</p>
+                            <div class="pub-meta">
+                                <a href="https://github.com/shoegazerstella/midi2img2vae" target="_blank" class="pub-link">View Repository →</a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Music Section -->
+            <section id="music" class="research terminal-view" data-view="music" style="display:none;">
+                <div class="container">
+                    <h2 class="section-title">Music & DJ Sets</h2>
+                    <div class="system-info">
+                        <div class="info-line">
+                            <span class="key">Genre:</span>
+                            <span class="value">IDM • Electronic • Techno • Ambient • Experimental</span>
+                        </div>
+                    </div>
+
+                    <div class="social-icons" style="margin-bottom: 1.5rem;">
+                        <a href="https://www.mixcloud.com/VBRA/" target="_blank" class="social-icon" aria-label="Mixcloud">
+                            <i class="fa fa-mixcloud"></i>
+                        </a>
+                        <a href="https://soundcloud.com/vbravbra" target="_blank" class="social-icon" aria-label="SoundCloud">
+                            <i class="fa fa-soundcloud"></i>
+                        </a>
+                    </div>
+
+                    <div class="publications-grid">
+                        <div class="publication mix-card">
+                            <iframe width="100%" height="140" src="https://www.mixcloud.com/widget/iframe/?hide_cover=0&feed=%2FVBRA%2Fvbra-mix-021%2F" frameborder="0"></iframe>
+                        </div>
+
+                        <div class="publication mix-card">
+                            <iframe width="100%" height="140" src="https://www.mixcloud.com/widget/iframe/?hide_cover=0&feed=%2FVBRA%2Fvbra-x-internet-public-radio%2F" frameborder="0"></iframe>
+                        </div>
+
+                        <div class="publication mix-card">
+                            <iframe width="100%" height="140" src="https://www.mixcloud.com/widget/iframe/?hide_cover=0&feed=%2FVBRA%2Fvbra-mix-020%2F" frameborder="0"></iframe>
+                        </div>
+
+                        <div class="publication mix-card">
+                            <iframe width="100%" height="140" src="https://www.mixcloud.com/widget/iframe/?hide_cover=0&feed=%2FVBRA%2Fvbra-mix-019%2F" frameborder="0"></iframe>
+                        </div>
+
+                        <div class="publication mix-card">
+                            <iframe width="100%" height="140" src="https://www.mixcloud.com/widget/iframe/?hide_cover=0&feed=%2FVBRA%2Fvbra-mix-017%2F" frameborder="0"></iframe>
+                        </div>
+
+                        <div class="publication mix-card">
+                            <iframe width="100%" height="140" src="https://www.mixcloud.com/widget/iframe/?hide_cover=0&feed=%2FVBRA%2Fvbra-mix-2016%2F" frameborder="0"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="scholar-banner" style="margin-top: 2rem;">
+                        <a href="https://www.mixcloud.com/VBRA/" target="_blank" class="scholar-link">
+                            <i class="fa fa-mixcloud"></i> View All Mixes on Mixcloud
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <!-- End Terminal Content -->
+    </div>
+    <!-- End Terminal Window -->
+
+    <!-- macOS Bottom Bar -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-line">
+                <span class="status-dot"></span>
+                <span>System Status: Active</span>
+            </div>
+            <div class="copyright">&copy; 2026 Maria Stella Tavella | All rights reserved</div>
+        </div>
+    </footer>
+
+    <script>
+        // Terminal View Switcher
+        function showView(viewName) {
+            // Hide all views
+            const allViews = document.querySelectorAll('.terminal-view');
+            allViews.forEach(view => {
+                view.style.display = 'none';
+            });
+
+            // Show selected view
+            const selectedView = document.querySelector(`[data-view="${viewName}"]`);
+            if (selectedView) {
+                selectedView.style.display = 'block';
+
+                // Scroll to top of terminal content
+                const terminalContent = document.querySelector('.terminal-content');
+                terminalContent.scrollTop = 0;
+
+                // Update terminal title
+                const terminalTitle = document.querySelector('.terminal-title');
+                const viewTitles = {
+                    'home': 'mstellatavella@about',
+                    'research': 'mstellatavella@research',
+                    'projects': 'mstellatavella@projects',
+                    'music': 'mstellatavella@music'
+                };
+                terminalTitle.textContent = viewTitles[viewName] || 'mstellatavella@about';
+
+                // Add visual feedback to clicked icon
+                highlightIcon(viewName);
+            }
+        }
+
+        // Highlight selected desktop icon
+        function highlightIcon(viewName) {
+            const icons = document.querySelectorAll('.desktop-icon');
+            icons.forEach(icon => {
+                icon.style.transform = 'scale(1)';
+                icon.style.opacity = '1';
+            });
+        }
+
+        // Add hover effects to desktop icons
+        document.querySelectorAll('.desktop-icon').forEach(icon => {
+            icon.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.1)';
+            });
+            icon.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1)';
+            });
+        });
+
+        // Typewriter effect for terminal log
+        function typeWriter() {
+            const terminalLog = document.getElementById('terminal-log');
+            if (!terminalLog) return;
+
+            const lines = [
+                { type: 'prompt', text: '$ whoami' },
+                { type: 'output', text: 'Sr AI Engineering Manager @ Musixmatch. Building systems that understand music through lyrics, audio, and everything in between.' },
+                { type: 'prompt', text: '$ cat interests.txt' },
+                { type: 'output', text: 'music ai • agent orchestration • MIR • electronic music production' },
+                { type: 'prompt', text: '$ uptime' },
+                { type: 'output', text: '10+ years in music tech' }
+            ];
+
+            let lineIndex = 0;
+            let charIndex = 0;
+            let currentElement = null;
+
+            function type() {
+                if (lineIndex >= lines.length) return;
+
+                const currentLine = lines[lineIndex];
+
+                // Create new paragraph element if needed
+                if (charIndex === 0) {
+                    currentElement = document.createElement('p');
+                    if (currentLine.type === 'prompt') {
+                        const promptSpan = document.createElement('span');
+                        promptSpan.className = 'prompt';
+                        promptSpan.textContent = currentLine.text.substring(0, 2); // '$ '
+                        currentElement.appendChild(promptSpan);
+                        currentElement.appendChild(document.createTextNode(''));
+                        charIndex = 2; // Start after '$ '
+                    } else {
+                        currentElement.className = 'output';
+                    }
+                    terminalLog.appendChild(currentElement);
+                }
+
+                // Type character
+                if (charIndex < currentLine.text.length) {
+                    const textNode = currentElement.childNodes[currentElement.childNodes.length - 1];
+                    if (currentLine.type === 'prompt') {
+                        textNode.textContent += currentLine.text.charAt(charIndex);
+                    } else {
+                        currentElement.textContent += currentLine.text.charAt(charIndex);
+                    }
+                    charIndex++;
+                    setTimeout(type, currentLine.type === 'prompt' ? 50 : 15); // Faster for output
+                } else {
+                    // Move to next line
+                    lineIndex++;
+                    charIndex = 0;
+                    setTimeout(type, 400); // Pause between lines
+                }
+            }
+
+            type();
+        }
+
+        // Initialize - show home view by default
+        document.addEventListener('DOMContentLoaded', function() {
+            showView('home');
+            typeWriter();
+        });
+    </script>
+</body>
+</html>
