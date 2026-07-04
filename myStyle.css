@@ -1038,12 +1038,6 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
     :root { --grid-gap: clamp(20px, 5vw, 32px); }
 
     .about-grid { grid-template-columns: 1fr; gap: 40px; }
-    .portrait {
-        position: relative;
-        top: 0;
-        max-width: 240px;
-        margin: 0 auto;
-    }
     .research-grid,
     .music-grid { grid-template-columns: 1fr; }
     .research-rail { position: relative; top: 0; border-right: none; padding-right: 0; padding-bottom: 1.5rem; border-bottom: 1px solid var(--ink-10); margin-bottom: 1.5rem; }
@@ -1078,6 +1072,45 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
     .nav-label { font-size: 0.7rem; }
 
     .grid-guide { display: none; }
+
+    /* mobile about: small portrait LEFT column, text RIGHT column */
+    .view[data-view="home"] .about-grid {
+        grid-template-columns: 96px 1fr;
+        gap: 18px;
+        align-items: start;
+    }
+    .view[data-view="home"] .portrait {
+        max-width: 96px;
+        width: 96px;
+        margin: 0;
+        float: none;
+    }
+    .view[data-view="home"] .portrait-frame { aspect-ratio: 4 / 5; }
+    .view[data-view="home"] .portrait-caption { display: none; }
+    .view[data-view="home"] .display-name {
+        font-size: clamp(1.6rem, 8vw, 2.4rem);
+        line-height: 0.92;
+        margin-bottom: 0.6rem;
+        overflow: hidden;
+    }
+    .view[data-view="home"] .role-line { margin-bottom: 0.8rem; font-size: 0.62rem; gap: 6px; }
+    .view[data-view="home"] .typed {
+        min-height: 0;
+        font-size: 0.88rem;
+        line-height: 1.45;
+        margin-bottom: 0.8rem;
+    }
+    .view[data-view="home"] .social-row {
+        padding-top: 0.6rem;
+        clear: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+    .view[data-view="home"] .social-row li a {
+        padding: 3px 8px 4px;
+        font-size: 0.62rem;
+    }
 
     .display-name { font-size: clamp(2.6rem, 16vw, 4rem); }
 
